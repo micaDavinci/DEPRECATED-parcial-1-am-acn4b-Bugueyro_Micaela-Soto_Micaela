@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         botonGasto.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-            }
+            } // gastos
+            
         });
 
 
