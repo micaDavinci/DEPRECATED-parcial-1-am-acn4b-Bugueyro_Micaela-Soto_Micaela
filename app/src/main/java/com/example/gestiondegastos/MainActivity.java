@@ -4,10 +4,15 @@ package com.example.gestiondegastos;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import ar.edu.davinci.gestor_de_gastos.R;
+
 public class MainActivity extends AppCompatActivity {
-    private Button botonIngreso;
-    private Button botonGasto;
+    private Button botonIngreso, botonGasto;
 
    
 
@@ -19,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         botonIngreso = (Button) findViewById(R.id.botonIngreso);
         botonGasto = (Button) findViewById(R.id.botonGasto);
 
+        /*
         botonIngreso.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -31,7 +37,16 @@ public class MainActivity extends AppCompatActivity {
             } // gastos
             
         });
+        */
+    }
 
+    public void agrgarGasto(View view){
+        LinearLayout agrgarGasto = findViewById(R.id.agrgarGasto);
+        EditText nombre = new EditText(this);
+        nombre.setText("Alquiler");
+    }
+
+    public void agregar(View view){
 
     }
 }
