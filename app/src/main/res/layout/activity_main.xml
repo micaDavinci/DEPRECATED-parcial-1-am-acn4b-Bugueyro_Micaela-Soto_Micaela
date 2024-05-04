@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/botonIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_del_boton_ingreso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/botonGasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_del_boton_gasto"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/botonIngreso"
+        android:layout_marginTop="20dp" />
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/graficoGastos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/botonGasto"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
+
+
+
+
+
+

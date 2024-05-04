@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gestion de Gastos</string>
+    <string name="nombre_del_boton_ingreso">Ingreso</string>
+    <string name="nombre_del_boton_gasto">Gasto</string>
+</resources>
+
+
