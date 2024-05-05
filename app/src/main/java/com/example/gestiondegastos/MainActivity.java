@@ -1,5 +1,6 @@
 package com.example.gestiondegastos;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -8,10 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import ar.edu.davinci.gestor_de_gastos.R;
+
 
 public class MainActivity extends AppCompatActivity {
     private Button botonIngreso, botonGasto;
@@ -40,22 +39,16 @@ public class MainActivity extends AppCompatActivity {
 
         botonGasto.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
-            } // gastos
+                Categoria c1 = new Categoria();
+                c1.setNombre(inputCategoria.getText().toString());
+                c1.setMonto(Double.parseDouble(inputMonto.getText().toString()));
+                categoria1.setText(c1.getNombre());
+            }
             
         });
 
     }
 
-    public void agregar(View view){
-        Categoria c1 = new Categoria();
-        c1.setNombre(inputCategoria.getText().toString());
-        c1.setMonto(Double.parseDouble(inputMonto.getText().toString()));
-        categoria1.setText(c1.getNombre());
-        monto1.setText(c1.getMonto());
-
-
-    }
 }
 
 
