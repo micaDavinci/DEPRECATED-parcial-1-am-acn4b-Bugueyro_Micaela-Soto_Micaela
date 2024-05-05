@@ -2,6 +2,10 @@
     <string name="app_name">Gestion de Gastos</string>
     <string name="nombre_del_boton_ingreso">Ingreso</string>
     <string name="nombre_del_boton_gasto">Gasto</string>
+    <string name="labelCategoria">Nombre de la categoría:</string>
+    <string name="labelMonto">Monto gastado:</string>
+    <string name="buttonAgregar">Agregar</string>
+
 </resources>
 
 
