@@ -46,8 +46,9 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
-        android:layout_height="273dp"
+        android:layout_height="314dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
@@ -55,7 +56,6 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.0">
@@ -64,29 +64,33 @@
             android:id="@+id/labelCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre de la categoría:" />
+            android:text="@string/labelCategoria" />
 
         <EditText
             android:id="@+id/inputCategoria"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="32dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="48dp"
             android:ems="10"
+            android:hint="Ingrese el nombre de la categoría..."
             android:inputType="text" />
+
 
         <TextView
             android:id="@+id/labelMonto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Monto gastado:" />
+            android:text="@string/labelMonto" />
 
         <EditText
             android:id="@+id/inputMonto"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="32dp"
             android:ems="10"
+            android:hint="Ingrese el monto gastado..."
             android:inputType="text" />
 
         <LinearLayout
@@ -96,12 +100,69 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonAgregar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Agregar" />
+                android:text="@string/buttonAgregar" />
         </LinearLayout>
+
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="271dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="img1" />
+
+                    <TextView
+                        android:id="@+id/categoria1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/monto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <!--
     <com.github.mikephil.charting.charts.LineChart

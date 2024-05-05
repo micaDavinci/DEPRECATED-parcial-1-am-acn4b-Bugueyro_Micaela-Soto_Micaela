@@ -27,7 +27,7 @@ public class Categoria {
         this.monto=monto;
     }
 
-    public double getMonto(){
+    public CharSequence getMonto(){
         return monto;
     }
 
