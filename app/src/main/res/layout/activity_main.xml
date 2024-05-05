@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:text="$100000" />
 
-            <!--
+
             <Button
                 android:id="@+id/botonIngreso"
                 android:layout_width="wrap_content"
@@ -54,7 +54,7 @@
                 android:layout_marginBottom="16dp"
                 android:text="@string/nombre_del_boton_ingreso"
                 tools:layout_marginStart="16dp" />
-             -->
+
 
         </LinearLayout>
 
@@ -79,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$80000" />
-            <!--
+
             <Button
                 android:id="@+id/botonGasto"
                 android:layout_width="108dp"
@@ -90,7 +90,7 @@
                 android:layout_marginBottom="16dp"
                 android:text="@string/nombre_del_boton_gasto" />
 
-              -->
+
         </LinearLayout>
 
 

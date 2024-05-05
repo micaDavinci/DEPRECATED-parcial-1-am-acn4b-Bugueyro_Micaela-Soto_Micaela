@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import ar.edu.davinci.gestor_de_gastos.R;
 
 
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         botonIngreso = (Button) findViewById(R.id.botonIngreso);
-        botonGasto = (Button) findViewById(R.id.botonGasto);
+        botonGasto = (Button) findViewById(R.id.botonIngreso);
         inputCategoria = findViewById(R.id.inputCategoria);
         inputMonto = findViewById(R.id.inputMonto);
         categoria1 = findViewById(R.id.categoria1);
